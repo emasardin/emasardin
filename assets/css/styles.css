@@ -1,0 +1,88 @@
+/* General */
+
+:root {
+    /* colores */
+    --first-color: #495057;
+    --first-color-dark: #343a40;
+    --first-color-darken: #212529;
+    --text-color: #6c757d;
+    --first-color-light: #e9ecef;
+    --first-color-lighten: #f8f9fa;
+    --color-resaltar: #52796F;
+
+    /* fuentes */
+    --font-main: 'Mulish', sans-serif;
+    --font-title: 'Poppins', sans-serif !important;
+    --h1-font-size: 2.1rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 2rem;
+    --h4-font-size: 1rem;
+    --h5-font-size: .9rem;
+}
+
+p {
+    font-family: 'Bodoni Moda', serif;
+    color: var(--first-color);
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: var(--h1-font-size);
+    font-weight: 200;
+}
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: 200;
+    color: var(--color-resaltar);
+}
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: 200;
+}
+h4 {
+    font-size: var(--h4-font-size);
+}
+h5 {
+    font-size: var(--h5-font-size);
+}
+.resaltar {
+    color: var(--color-resaltar) !important;
+}
+
+/* Main */
+
+.box {
+    width: 50%;
+    height: 300px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@supports(object-fit: cover){
+      .box img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+
+/* media querys */
+@media only screen and (max-width: 800px) {
+    .box {
+        width: 100%;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+        height: 300px;
+    }
+}
