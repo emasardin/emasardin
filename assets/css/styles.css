@@ -61,7 +61,10 @@ h5 {
     height: auto;
 }
 
-
+/* Contacto */
+.quote {
+    font-size: var(--h5-font-size);
+}
 
 
 @supports(object-fit: cover){
